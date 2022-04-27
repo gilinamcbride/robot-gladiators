@@ -4,28 +4,6 @@
 //      *Defeat each enemy-robot
 // "LOSE" - Player robot's health is zero or less
 
-var playerInfo = {
-    name: window.prompt("What is your robot's name?"),
-    health: 100,
-    attack: 10,
-    money: 10,
-};
-
-var enemyInfo = [
-    {
-        name: "Roborto",
-        attack: randomNumber(10, 14)
-    },
-    {
-        name: "Amy Android",
-        attack: randomNumber(10, 14)
-    },
-    {
-        name: "Robo Trumble",
-        attack: randomNumber(10, 14)
-    }
-];
-
 
 var fight = function(enemy) {
     // replaet and execute as long as the enemy-robot is alive
@@ -165,8 +143,18 @@ var randomNumber = function(min, max) {
     return value;
 }
 
+//function to set name
+var  getPlayerName = function() {
+    var name = "";
+    while (name === "" || name === null) {
+        name = prompt("What is your robot's name?");
+    }
+    console.log("Your robot's name is ", name);
+    return name;
+};
+
 var playerInfo = {
-    name: window.prompt("What is your robot's name?"),
+    name: getPlayerName(),
     health: 100,
     attack: 10,
     money: 10,
