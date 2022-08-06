@@ -17,6 +17,10 @@ Open website and follow on screen instructions to play Robot Gladiators.
 
 ## Application
 
+Example of Game Alert:
+
+![screenshot](./assets/images/screenshot.png)
+
 [Link to Deployed Application](https://gilinamcbride.github.io/robot-gladiators/)
 
 ## Questions?
